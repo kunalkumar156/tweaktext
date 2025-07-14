@@ -1,0 +1,25 @@
+{
+  "name": "tweaks",
+  "version": "1.0.0",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "tsc && electron .",
+    "build": "tsc",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/node": "^24.0.13",
+    "@types/node-fetch": "^2.6.12",
+    "electron": "^37.2.1",
+    "electron-rebuild": "^3.2.9",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@nut-tree-fork/nut-js": "^4.2.6",
+    "dotenv": "^17.2.0",
+    "env": "^0.0.2",
+    "node-fetch": "^2.7.0",
+    "node-key-sender": "^1.0.11"
+  }
+}

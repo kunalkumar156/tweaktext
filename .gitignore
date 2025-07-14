@@ -1,0 +1,23 @@
+# 🔒 Sensitive files
+.env
+.env.local
+
+# 🧱 Node & Build
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# ⚙️ System
+.DS_Store
+.vscode/
+.idea/
+
+# 🧪 Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# 📊 Coverage
+coverage/
+nyc_output/
