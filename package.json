@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
-    "dev": "tsc && electron .",
     "build": "tsc",
-    "start": "electron ."
+    "start": "npm run build && electron .",
+    "dev": "tsc && electron ."
   },
   "devDependencies": {
     "@types/electron": "^1.6.12",

@@ -1,7 +1,6 @@
 import { app, globalShortcut, clipboard, Tray, Menu } from "electron";
 import path from "path";
 import dotenv from "dotenv";
-
 import { keyboard, Key } from "@nut-tree-fork/nut-js";
 import { cleanWithGemini } from "./utils/gemini";
 
