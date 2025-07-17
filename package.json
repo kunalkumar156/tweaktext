@@ -1,17 +1,69 @@
 {
-  "name": "tweaks",
+  "name": "tweak",
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
-    "build": "tsc",
-    "start": "npm run build && electron .",
-    "dev": "tsc && electron ."
+  "dev": "tsc && electron .",          
+  "build": "tsc",                        
+  "start": "electron .",                
+  "dist": "electron-builder"            
+},
+  "build": {
+    "appId": "com.kunal.tweak",
+    "productName": "Tweak",
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "assets/icon.icns",
+      "category": "public.app-category.productivity",
+      "hardenedRuntime": false
+    },
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "package.json",
+      "src/**/*",
+      ".env"
+    ],
+    "extraResources": [
+      {
+        "from": "assets/",
+        "to": "assets",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "dmg": {
+      "background": null,
+      "icon": "assets/icon.icns",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 130,
+          "y": 220,
+          "type": "file"
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    }
   },
   "devDependencies": {
     "@types/electron": "^1.6.12",
     "@types/node": "^24.0.13",
     "@types/node-fetch": "^2.6.12",
     "electron": "^37.2.1",
+    "electron-builder": "^26.0.12",
     "electron-rebuild": "^3.2.9",
     "typescript": "^5.8.3"
   },
