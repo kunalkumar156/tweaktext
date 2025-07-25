@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "dist/main.js",
   "scripts": {
-  "dev": "tsc && electron .",          
-  "build": "tsc",                        
-  "start": "electron .",                
-  "dist": "electron-builder"            
-},
+    "dev": "tsc && electron .",
+    "build": "tsc",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
   "build": {
     "appId": "com.kunal.tweak",
     "productName": "Tweak",
@@ -70,6 +70,7 @@
   "dependencies": {
     "@nut-tree-fork/nut-js": "^4.2.6",
     "dotenv": "^17.2.0",
+    "electron-auto-launch": "^5.0.7",
     "env": "^0.0.2",
     "node-fetch": "^2.7.0",
     "node-key-sender": "^1.0.11"
